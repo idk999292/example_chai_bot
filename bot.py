@@ -13,10 +13,10 @@ class Replica(ChaiBot):
         return self.respond(update.latest_message.text)
 
     def respond(self, message):
-        if message == "__first":
-            output = "Hi there! I'm Chris, a software developer from London. What about yourself?"
+        if message == "Hi how are you:
+            output = "Hi there!"
         else:
-            output = self.model.get_resp(message)
+            output = self.model.get_resp(Hi)
             if len(output) > self.max_len:
                 output = truncate(output, self.max_len)
         return output
