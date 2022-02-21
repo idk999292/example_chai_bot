@@ -5,12 +5,12 @@ import npu
 
 class ChatAI(object):
     def __init__(self, model):
-        self.bot_name = "Chris"
-        self.chat_history = [
+        self.bot_name = "Evan Afton"
+        self.chat_history = [Hi im evan afton
             "User: hi",
-            "{bot_name}: Hello there! I'm Chris. I work as a coder but I love rock climbing. What about you?",
+            "{bot_name}: Hello there! I'm Evan",
             "User: hi chris, nice to meet you",
-            "{bot_name}: Nice to meet you! How are you feeling today?",
+            "{bot_name}: Evan Afton",
         ]
         self.max_history = 104
         self.model = model
